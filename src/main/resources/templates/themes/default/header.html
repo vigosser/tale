@@ -27,14 +27,16 @@
     当前网页 <strong>不支持</strong> 你正在使用的浏览器. 为了正常的访问, 请 <a href="http://browsehappy.com/" target="_blank">升级你的浏览器</a>。
 </div>
 <![endif]-->
-<header id="header" class="header bg-white">
+<header id="header" class="header bg-white" style="">
+	
     <div class="navbar-container">
-        <a href="${site_url()}" class="navbar-logo">
-            <img src="${theme_option('logo_url') ?! theme_url('/static/img/logo.png')}" alt="${site_title()}"/>
+        <a style="top:28%" href="${site_url()}" class="navbar-logo">
+            <img style="height:50px"
+            src="${theme_option('logo_url') ?! theme_url('/static/img/logo.png')}" alt="${site_title()}"/>
         </a>
         <div class="navbar-menu">
             <a href="${site_url('/archives')}">归档</a>
-            <a href="${site_url('/links')}">友链</a>
+            <!--  <a href="${site_url('/links')}">友链</a>-->
             <a href="${site_url('/about')}">关于</a>
         </div>
         <div class="navbar-search" onclick="">
@@ -50,7 +52,7 @@
             <span class="icon-menu cross"><span class="middle"></span></span>
             <ul>
                 <li><a href="${site_url('/archives')}">归档</a></li>
-                <li><a href="${site_url('/links')}">友链</a></li>
+               <!-- <li><a href="${site_url('/links')}">友链</a></li>-->
                 <li><a href="${site_url('/about')}">关于</a></li>
             </ul>
         </div>

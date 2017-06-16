@@ -1,5 +1,5 @@
-<footer id="footer" class="footer bg-white">
-    <div class="footer-social">
+<footer id="footer" class="footer bg-white" style="height:300px">
+    <div class="footer-social"> 
         <div class="footer-container clearfix">
             <div class="social-list">
                 #if(null != theme_option('social_weibo'))
@@ -24,9 +24,9 @@
             </div>
         </div>
     </div>
-    <div class="footer-meta">
-        <div class="footer-container">
-            <div class="meta-item meta-copyright">
+    <div class="footer-meta" style="padding-top: 60px">
+        <div class="footer-container" style="height: 80px">
+            <div class="meta-item meta-copyright"  style="text-align: center">
                 <div class="meta-copyright-info">
                     <a href="${site_url()}" class="info-logo">
                         <img src="/templates/themes/default/static/img/logo.png" alt="${site_title()}">
@@ -40,7 +40,7 @@
                 </div>
             </div>
 
-            <div class="meta-item meta-posts">
+            <div class="meta-item meta-posts"  style="text-align: center">
                 <h3 class="meta-title">最新文章</h3>
                 #for(article : recent_articles(8))
                 <li>
@@ -49,7 +49,7 @@
                 #end
             </div>
 
-            <div class="meta-item meta-comments">
+            <div class="meta-item meta-comments" style="text-align: center">
                 <h3 class="meta-title">最新评论</h3>
                 #for(comm : recent_comments(8))
                 <li>
